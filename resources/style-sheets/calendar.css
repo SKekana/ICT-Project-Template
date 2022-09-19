@@ -1,0 +1,66 @@
+#cal {
+        background-color: #f0f0f0;
+        display: block;
+}
+
+#cal table {
+        clear: both;
+}
+     
+#cal table caption {
+        font-weight: bold;
+        font-size: 10pt;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background: rgb(46,49,146);
+        color: white;
+}
+     
+#cal table th {
+        text-align: right;
+}
+     
+#cal table th, #cal table td {
+        width: 1em;
+        padding: 2px;
+}
+     
+#cal table td {
+        color: rgb(10, 24, 21);
+        text-align: right;
+        cursor: pointer;
+}
+
+#cal table td.futuredate {
+        color: rgb(125, 0, 150);
+}
+     
+#cal table td.futuredate:hover, #prev:hover, #next:hover, #close:hover {
+        background: yellow;
+        color: black;
+}
+
+#cal table td.futuredate {
+        color: rgb(192, 192, 192);
+}
+     
+#cal table td.futuredate:hover, #prev:hover, #next:hover, #close:hover {
+        background: yellow;
+        color: black;
+}
+
+#prev {
+        float: left;
+        padding: 2px;
+        cursor: pointer;
+}
+     
+#next {
+        float: right;
+        padding: 2px;
+        cursor: pointer;
+}
+     
+#close span {
+        font-size: 10pt;
+}

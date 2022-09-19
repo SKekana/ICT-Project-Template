@@ -1,0 +1,19 @@
+#wrapper {
+        width:960px;
+        height:100%;
+        margin-right:auto;
+        margin-left:auto;
+        margin-top: 20px;
+}
+#logo-head{
+        height: 70px;
+}
+img.right{float:right;}
+#heading {
+        text-align: center;
+}
+
+.right p{
+        text-align: right;
+        float: right;
+}

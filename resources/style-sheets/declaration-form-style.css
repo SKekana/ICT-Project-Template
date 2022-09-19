@@ -1,0 +1,12 @@
+/* Style sheet that formats the HTML elements that are displayed in the declaration page */
+#wrapper {
+        width:720px;
+        height:100%;
+        margin-right:auto;
+        margin-left:auto;
+        margin-top: 20px;
+}
+
+h1 {
+        font-size: 95%;
+}

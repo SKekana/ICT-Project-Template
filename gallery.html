@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<title>Gallery</title>
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-">
+        <script src="resources/javascript/calendar.js"></script>
+        <link href="resources/style-sheets/calendar.css" rel="stylesheet">
+        <link href="resources/style-sheets/main-style.css" rel="stylesheet">
+        <script src="resources/javascript/jquery-3.6.0.min.js"></script>
+        <script src="resources/javascript/jquery.js"></script>
+        <script src="resources/javascript/ajax_loader.js"></script>
+        <link href="resources/style-sheets/gallery-style.css" rel="stylesheet">
+        <script src="resources/javascript/gallery.js"></script>
+        
+
+</head>
+<style>
+
+
+
+</style>
+
+<body>
+        <div id="wrapper">
+                <header>
+                        <img id="logo" src="resources/images/logo.png" width="150" height="150">
+                        <h1><br>SCHOOL NAME</h1>
+
+                        <ul id="navigation-bar-2">
+                                <li><a href="homepage.html">Home</a></li>
+                                <li><a href="quote.html">Request a Quote</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="declaration-form.html"  target="_blank">Declaration Form</a></li>
+                                <li><a href="javascript:loadStaffRecord();">Staff</a></li>
+
+                                <li id="drop-down">
+                                        <p><a href="">School</a></p>
+                                        <ul class="expand">
+                                               
+                                                <li style="display: block;"><a href="javascript:showSchoolFees();">School Fees</a></li>
+                                                <li style="display: block;"><a href="javascript:showSchoolHistory();">School History</a></li>
+                                                <li style="display: block;"><a href="javascript:showSchoolTimes();">School Times</a></li>
+                                                <li style="display: block;"><a href="javascript:showReasons()">Why this school?</a></li>
+                                        </ul>
+                                </li>
+                        </ul>                       
+                </header>
+
+                <article id="article">
+                        <h2>School Image Gallery</h2>
+                        <!-- Division that displays the image slide show. -->
+                        <div id="view">
+                                <span id="prev">&#60</span>
+                                <span id="next">&#62</span>
+                                <img id="current" src="resources/images/gallery-images/1.png">
+                        </div>
+                        <!-- Division that contains the static display images. -->
+                        <div>
+                                <div>
+                                        <div class="thum_image">
+                                                <img src="resources/images/gallery-images/1.png" alt="IMG_1" width="800" height="600" onclick="zoomFig(this)">
+                                        </div>
+                                        
+                                        <div class="thum_image">
+                                                <img src="resources/images/gallery-images/2.png" alt="IMG_2" width="800" height="600" onclick="zoomFig(this)">
+                                        </div>
+                
+                                        <div class="thum_image">
+                                                <img src="resources/images/gallery-images/3.png" alt="IMG_3" width="800" height="600" onclick="zoomFig(this)">
+                                        </div>
+                
+                                        <div class="thum_image">
+                                                <img src="resources/images/gallery-images/4.png" alt="IMG_4" width="800" height="600" onclick="zoomFig(this)">
+                                        </div>
+                                </div>
+                                <div>
+                                        <div class="thum_image">
+                                                <img src="resources/images/gallery-images/5.png" alt="IMG_5" width="800" height="600" onclick="zoomFig(this)">
+                                        </div>
+                
+                                        <div class="thum_image">
+                                                <img src="resources/images/gallery-images/6.png" alt="IMG_6" width="800" height="600" onclick="zoomFig(this)">
+                                        </div>
+                                </div>
+
+                        </div>
+                </article>
+                <footer>
+                        <div class="footer-div">
+                                <p>Physical Address:<br>Address Line 1<br>Address Line 2<br>Address Line 3</p>
+                                <a href="location.html" target="_blank">Directions</a>
+                        </div>
+                        <div class="footer-div">
+                                <p>Telephone number: 0XX XXX XXXX<br>Fax: 0XX XXX XXXX</p>
+                        </div>
+                        <div class="footer-div">
+                                <p>Email Addresses</p>
+                                <p>Email 1: email1@host.co.za<br>Email 2: email2@host.co.za<br>Email 3: host@phost.co.za</p>
+                        </div>
+
+                </footer>
+        </div>
+</body>

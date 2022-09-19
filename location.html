@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<title>Location</title>
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-">
+        <script src="resources/javascript/calendar.js"></script>
+        <link href="resources/style-sheets/calendar.css" rel="stylesheet">
+        <link href="resources/style-sheets/main-style.css" rel="stylesheet">
+        <script src="resources/javascript/jquery-3.6.0.min.js"></script>
+        <script src="resources/javascript/jquery.js"></script>
+        <script src="resources/javascript/ajax_loader.js"></script>
+        <script src="resources/javascript/map.js"></script>
+
+</head>
+<style>
+
+
+
+</style>
+
+<body onload="displayCalendar(); menu()">
+        <div id="wrapper">
+                <header>
+                        <img id="logo" src="resources/images/logo.png" width="150" height="150">
+                        <h1><br>SCHOOL NAME</h1>
+
+                        <ul id="navigation-bar-2">
+                                <li><a href="homepage.html">Home</a></li>
+                                <li><a href="quote.html">Request a Quote</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="declaration-form.html"  target="_blank">Declaration Form</a></li>
+                                <li><a href="javascript:loadStaffRecord();">Staff</a></li>
+
+                                <li id="drop-down">
+                                        <p><a href="">School</a></p>
+                                        <ul class="expand">
+                                                <!-- <li style="display: block;"><a href="">School</a></li> -->
+                                                <li style="display: block;"><a href="javascript:showSchoolFees();">School Fees</a></li>
+                                                <li style="display: block;"><a href="javascript:showSchoolHistory();">School History</a></li>
+                                                <li style="display: block;"><a href="javascript:showSchoolTimes();">School Times</a></li>
+                                                <li style="display: block;"><a href="javascript:showReasons()">Why this school?</a></li>
+                                        </ul>
+                                </li>
+                        </ul>                       
+                </header>
+                <aside id="left-aside">
+                        <ul>
+                                <li><a href="javascript:showSchoolFees();">School Fees</a></li>
+                                <li><a href="javascript:showSchoolHistory();">School History</a></li>
+                                <li><a href="javascript:showSchoolTimes();">School Times</a></li>
+                                <li><a href="javascript:showReasons()">Why this school?</a></li>
+                        </ul>
+                </aside>
+                <aside id="right-aside">
+                        <div id="cal">
+                                <div id="prev">&lt; previous</div>
+                                <div id="next">next &gt;</div>
+                                <table>
+                                   <caption></caption>
+                                   <tr>
+                                      <th>Sun</th>
+                                      <th>Mon</th>
+                                      <th>Tue</th>
+                                      <th>Wed</th>
+                                      <th>Thu</th>
+                                      <th>Fri</th>
+                                      <th>Sat</th>
+                                   </tr>
+                                   <tr>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                   </tr>
+                                   <tr>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                   </tr>
+                                   <tr>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                   </tr>
+                                   <tr>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                   </tr>
+                                   <tr>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                   </tr>
+                                   <tr>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                      <td></td>
+                                   </tr>
+                                </table>
+                        </div>
+                </aside>
+                <article id="article">
+                        <div id="map">
+
+                        </div>
+                </article>
+                <footer>
+                        <div class="footer-div">
+                                <p>Physical Address:<br>Address Line 1<br>Address Line 2<br>Address Line 3</p>
+                                <a href="location.html">Directions</a>
+                        </div>
+                        <div class="footer-div">
+                                <p>Telephone number: 0XX XXX XXXX<br>Fax: 0XX XXX XXXX</p>
+                        </div>
+                        <div class="footer-div">
+                                <p>Email Addresses</p>
+                                <p>Email 1: email1@host.co.za<br>Email 2: email2@host.co.za<br>Email 3: host@phost.co.za</p>
+                        </div>
+
+                </footer>
+        </div>
+</body>

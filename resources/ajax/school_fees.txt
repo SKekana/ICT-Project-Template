@@ -1,0 +1,31 @@
+<h2>School Fees 2021</h2>
+
+        <h3>Annual School fees For 2021</h3>
+
+                <table id="fees">
+                        <caption>School Fees Per Year</caption>
+                        <tr>
+                                <th>Grade</th>
+                                <th>Fee</th>
+                        </tr>
+                        <tr>
+                                <td>8</td>
+                                <td></td>
+                        </tr>
+                        <tr>
+                                <td>9</td>
+                                <td></td>
+                        </tr>
+                        <tr>
+                                <td>10</td>
+                                <td></td>
+                        </tr>
+                        <tr>
+                                <td>11</td>
+                                <td></td>
+                        </tr>
+                        <tr>
+                                <td>12</td>
+                                <td></td>
+                        </tr>
+                </table>

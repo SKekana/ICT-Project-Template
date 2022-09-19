@@ -1,0 +1,84 @@
+#article {
+        width: 700px;
+        height: 1600px;
+}
+#article label{
+        float: left;
+        width: 7.5em;
+        text-align: right;
+        margin-right: 10px;
+}
+.submit{margin-left: 1em;}
+
+
+fieldset{
+        margin-top: 10px;
+        border-color: rgba(34, 34, 34, 0.315);
+        border: solid 1px;
+}
+#extra_curr li{
+        list-style-type:none;
+        list-style:none;
+        display:table;
+}
+.errorMessage {
+        color: red;
+}
+#article .errorMessage{
+        padding: 0px;
+        font-size: 75%;
+        margin: 0px;
+}
+#extra_curr p{
+        margin: 0px;
+        padding: 0px;
+}
+ul#extra_curr{
+        list-style-type: none;
+}
+#extra_curr label{
+        margin-left: 10px;
+        width:fit-content;
+}
+#extra_curr input{
+        float: left;
+}
+#article legend {
+        text-align: right;
+        font-size: 110%;;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: italic;
+}
+
+#extra_curr li{
+        list-style-type:none;
+        list-style:none;
+        display:table;
+}
+
+#extra_curr p{
+        margin: 0px;
+        padding: 0px;
+}
+ul#extra_curr{
+        list-style-type: none;
+}
+#extra_curr label{
+        margin-left: 10px;
+        width:fit-content;
+}
+#extra_curr input{
+        float: left;
+}
+
+#extra_curr li{
+        list-style-type:none;
+}
+#error {
+        padding:0;
+        border: none;
+        margin: none;
+        text-align: center;
+        color: red;
+}
+

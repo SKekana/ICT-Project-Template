@@ -1,0 +1,130 @@
+h1, h2 {
+        text-align: left;
+}
+
+#wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        border: thin solid black;
+        padding: 1px 1px 1px 1px;
+        box-shadow: 0px 0px 10px 5px grey;
+
+}
+
+header {
+        height: 170px;
+        background-color: rgb(202, 202, 202);
+}
+h1 {
+        text-align: center;
+        
+}
+#logo {
+        float: left;
+        margin: 5px 5px 5px 5px;
+}
+ul#navigation-bar-2 li{
+        display: inline;
+        margin-right: 10px;
+}
+ul#navigation-bar-2 a{
+        border: solid 1px;
+        margin-left: 10px;
+        padding: 10px 20px 10px 20px;
+        background-color: #ccccff;
+        text-decoration: none;
+}
+#drop-down li{
+        margin-bottom: 20px;
+}
+
+#drop-down {
+        position: absolute;
+
+        
+}
+#drop-down ul {
+        padding: 0px;
+        margin: 0px;
+}
+#drop-down p{
+        padding: 0px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+}
+
+aside {
+        margin-top: 10px;
+}
+aside#left-aside {
+        float: left;
+        width: 180px;
+        height: 300px;
+}
+#left-aside a{
+        border: solid 1px;
+        padding: 5px 10px 5px 10px;
+        text-decoration: none;
+        background-color: #ccccff;
+        text-align: center;
+        display: block;
+        width: 100px;
+}
+#left-aside li {
+        margin-top: 15px;
+        list-style: none;
+}
+
+article {
+        
+        width: 450px;
+        height: 1000px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        float: left;
+        padding: 10px 10px 10px 10px;
+}
+#article table {
+        border-collapse: collapse;
+        border: solid 1px white;
+        width: 90%;
+}
+#article th {
+        width: 200px;
+        color: white;
+        background-color: #6e6e6e;
+}
+#article td{
+        text-align: center;
+        color: black;
+        background-color: rgb(194, 194, 194);
+}
+
+#article caption {
+        color: #474747;
+        font-weight: bold;
+}
+
+aside#right-aside{
+
+        float: right;
+        width: 250px;
+        height: 300px;
+}
+footer {
+        float: none;
+        clear: both;
+        margin-top: 10px;
+        height: 170px;
+        background-color: lightsteelblue;
+}
+.footer-div {
+        width: 30%;
+        height: 140px;
+        float: left;
+        margin: 5px 5px 5px 5px;
+        padding: 5px 5px 5px 5px;
+}

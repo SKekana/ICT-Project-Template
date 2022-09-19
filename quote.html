@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<title>Request a Quote</title>
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-">
+        <link href="resources/style-sheets/main-style.css" rel="stylesheet">
+        <script src="resources/javascript/jquery-3.6.0.min.js"></script>
+        <script src="resources/javascript/jquery.js"></script>
+        <script src="resources/javascript/ajax_loader.js"></script>
+        <link href="resources/style-sheets/quote-form-style.css" rel="stylesheet">
+        <script src="resources/javascript/form-functions.js"></script>
+
+</head>
+<style>
+
+
+
+</style>
+
+<body>
+        <div id="wrapper">
+                <header>
+                        <img id="logo" src="resources/images/logo.png" width="150" height="150">
+                        <h1><br>SCHOOL NAME</h1>
+
+                        <ul id="navigation-bar-2">
+                                <li><a href="homepage.html">Home</a></li>
+                                <li><a href="quote.html">Request a Quote</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="declaration-form.html"  target="_blank">Declaration Form</a></li>
+                                <li><a href="javascript:loadStaffRecord();">Staff</a></li>
+
+                                <li id="drop-down">
+                                        <p><a href="">School</a></p>
+                                        <ul class="expand">
+                                                <li style="display: block;"><a href="javascript:showSchoolFees();">School Fees</a></li>
+                                                <li style="display: block;"><a href="javascript:showSchoolHistory();">School History</a></li>
+                                                <li style="display: block;"><a href="javascript:showSchoolTimes();">School Times</a></li>
+                                                <li style="display: block;"><a href="javascript:showReasons()">Why this school?</a></li>
+                                        </ul>
+                                </li>
+                        </ul>                       
+                </header>
+                <aside id="left-aside">
+                        <ul>
+                                <li><a href="javascript:showSchoolFees();">School Fees</a></li>
+                                <li><a href="javascript:showSchoolHistory();">School History</a></li>
+                                <li><a href="javascript:showSchoolTimes();">School Times</a></li>
+                                <li><a href="javascript:showReasons()">Why this school?</a></li>
+                        </ul>
+                </aside>
+
+                <article id="article">
+
+                        <form action="server-response.php" novalidate method="POST">
+
+                        <fieldset id="error">
+                                <p></p>
+                        </fieldset>
+
+                        <fieldset id="account_details">
+                                <legend>Username and Password</legend>
+                                <p>
+                                        <label class="username" for "User Name">User Name: </label>
+                                        <input type="text" name="user name" id="user_name" size="20" minlength="5" maxlength="40">
+                                </p>
+                                <p>
+                                        <label class="userpassword" for "User Password">Password: </label>
+                                        <input type="password" name="user password" id="user_password" minlength="5" size="20" maxlength="40">
+                                </p>
+                                <p>
+                                        <label class="verifyuserpassword" for "Verify User Password">Verify Password: </label>
+                                        <input type="password" name="v user password" id="v_user_password" minlength="5" size="20" maxlength="40">
+                                </p>
+                                <p class="errorMessage"></p>
+
+                        </fieldset>
+
+
+                        <fieldset id="personal_info">
+                                <legend>Personal Information</legend>
+                                <p style="font-size: 90%;">Name and Surname</p>
+                                <p>
+                                        <label class="name" for "First Name">First Name: </label>
+                                        <input type="text" name="first_name" id="first name" size="40" maxlength="40" required>
+                                </p>
+                                <p>
+                                        <label class="surname" for "Last Name">Last Name: </label>
+                                        <input type="text" name="last_name" id="second name" size="40" maxlength="40">
+                                </p>
+                                <p style="font-size: 90%;">Address infromation</p>
+                                <p>
+                                        <label class="streetname" for "Street Name">Street Name: </label>
+                                        <input type="text" name="street_name" id="street name" size="40" minlength="5" maxlength="40">
+
+                                <p>
+                                        <label class="complexaddress" for "Complex Address">Complex Address: </label>
+                                        <input type="text" name="complex_add" id="complex address" size="40" minlength="5" maxlength="40">
+                                </p>
+                                <p>
+                                        <label class="suburbaddress" for "Suburb Address">Suburb Address: </label>
+                                        <input type="text" name="suburb_add"id="suburb address" size="40" minlength="5" maxlength="40">
+                                </p>
+                                <p>
+                                        <label class="townaddress" for "Town Address">Town Address: </label>
+                                        <input type="text" name="town_add"id="town address" size="40" minlength="5" maxlength="40">
+                                </p>
+                                <p>
+                                        <label class="postalcode" for "Postal Code">Postal Code: </label>
+                                        <input type="number" name="postal_code" id="postal code" min="0" max="99999" step="1">
+                                </p>
+                                <p id="addressErrorMessage" class="errorMessage"></p>
+                        </fieldset>
+
+                        <fieldset id="contact">
+                                <legend>Contact Details</legend>
+                                <p>
+                                        <label class="number" for "Phone Number">Phone Number: </label>
+                                        <input type="number" name="phone_number" id="phone_number" size="15" max="10">
+                                </p>
+                                <p>
+                                        <label class="email" for "Email Address">Email Address: </label>
+                                        <input type="email" name="email_address" id="email_address" size="20" max="40">
+                                </p>
+
+                                <p class="errorMessage"></p>
+
+                        </fieldset>
+
+                        <fieldset>
+                                <legend>Payment Options</legend>
+                                <p>Please select which payment period you prefer.</p>
+                                <input type="radio" name="payment_type" value="monthly" checked="checked">Monthly payments<br>
+                                <input type="radio" name="payment_type" value="yearly">Yearly payments
+                        </fieldset>
+
+                        <fieldset>
+                                <legend>Number of enrollees</legend>
+                                <p>Enter the number of children that you plan to apply to the school for.</p>
+                                <select name="no_of_children">
+                                        <option value="1">One Child</option>
+                                        <option value="2">Two Children</option>
+                                        <option value="3">Three Children</option>
+                                        <option value="4">Four or more children</option>
+                                </select>
+                        </fieldset>
+
+                        <fieldset id="extra_curr">
+                                <legend>Extra-curricular Activities</legend>
+                                <p>Please select at least 5 extra-curricular activities</p>
+                                <ul id="extra_curricular">
+
+                                </ul>
+                                <p class="errorMessage"></p>
+                        </fieldset>
+
+
+                        <fieldset>
+                                <legend>Quote Day</legend>
+                                <p>Please select a day for the quote:</p>
+                                <p>
+                                        <label class="quoteDate" for "Quote Day">Date: </label>
+                                        <select name="input_day" id="day_input">1</select>
+                                        <select name="input_month" id="month_input">January</select>
+                                        <select name="input_year" id="year_input">2021</select>
+                                </p>
+                        </fieldset>
+
+                
+                        <p class="form_buttons">
+                                <button type="button" id="validate">Submit</button>
+                                <button type="button" id="clear-form">Clear</button>
+                                <button type="button" id="clear-cookies">Cancel</button>
+                                <button type="button" id="create-cookies">Create Cookies</button>
+                        </p>
+                        </form>
+                </article>
+                <footer>
+                        <div class="footer-div">
+                                <p>Physical Address:<br>Address Line 1<br>Address Line 2<br>Address Line 3</p>
+                                <a href="location.html" target="_blank">Directions</a>
+                        </div>
+                        <div class="footer-div">
+                                <p>Telephone number: 0XX XXX XXXX<br>Fax: 0XX XXX XXXX</p>
+                        </div>
+                        <div class="footer-div">
+                                <p>Email Addresses</p>
+                                <p>Email 1: email1@host.co.za<br>Email 2: email2@host.co.za<br>Email 3: host@phost.co.za</p>
+                        </div>
+
+                </footer>
+        </div>
+</body>
